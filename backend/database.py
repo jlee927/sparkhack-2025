@@ -2,16 +2,12 @@
 # Testing file for integrating postgres with python
 # Concept that I would be using to manage this is Object-Relational-Mapping (ORM)
 #
-
+import objecttier
 import psycopg2, os
 from dotenv import load_dotenv
 
 load_dotenv()
-database = os.getenv("DATABASE")
-host = os.getenv("HOST")
-username = os.getenv("USERNAME")
-password = os.getenv("PASSWORD")
-port = os.getenv("PORT")
+database, host, username, password, port = (os.getenv(var) for var in ("DATABASE", "HOST", "USERNAME", "PASSWORD", "PORT"))
 
 conn = psycopg2.connect(database=database,
                          host=host,
@@ -21,7 +17,7 @@ conn = psycopg2.connect(database=database,
                          )
 
 cursor = conn.cursor()
-cursor.execute("SELECT * FROM Question")
-print(cursor.fetchall())
+questions = objecttier.all_category_questions(conn, "Computer Science")
 
-
+for q in questions:
+    print(q.Question)

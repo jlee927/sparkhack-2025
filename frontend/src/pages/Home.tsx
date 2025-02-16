@@ -1,9 +1,10 @@
 import React, { useRef } from 'react';
 import styles from "../styles/Home.module.css"
 import { motion } from 'framer-motion'
+import { NavLink } from 'react-router-dom'
 import Dictaphone from './Dictaphone';
 
-const Home = () => {
+const Home: React.FC = () => {
   const scrollRef = useRef(null); // Reference for the element to scroll to
 
   const handleScroll = () => {
@@ -78,7 +79,11 @@ const Home = () => {
 
         {/* New content to scroll to */}
         <div ref={scrollSubmit} className={styles.questions}>
-          <Dictaphone />
+          {/*<Dictaphone /> */}
+          <h1>Read to Start Your First Dive?</h1>
+          <NavLink to="/setup">
+            <h2>Dive In!</h2>
+          </NavLink>
         </div>
 
       </section>

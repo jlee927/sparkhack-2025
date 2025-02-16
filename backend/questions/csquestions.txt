@@ -1,11 +1,11 @@
-Tell me about a time you worked well within a team
-Tell me about a time you dealt with conflict on a team. How did you solve it?
-Tell me about a time you failed at work
-Why do you want to work here?
-Walk me through your resume and relevant experience
-Tell me about an interesting project you’ve worked on recently
-Tell me about a time you faced a really hard problem / a challenge at work
-Tell me about a time you showed leadership
-Tell me about a time you had to meet a tight deadline
-Tell me about your biggest weakness
-Describe a time you had to prioritize projects under pressure
+Tell me about a time you worked well within a team,Medium
+Tell me about a time you dealt with conflict on a team. How did you solve it?,Hard
+Tell me about a time you failed at work,Hard
+Why do you want to work here?,Easy
+Walk me through your resume and relevant experience,Easy
+Tell me about an interesting project you’ve worked on recently,Easy
+Tell me about a time you faced a really hard problem / a challenge at work,Hard
+Tell me about a time you showed leadership,Medium
+Tell me about a time you had to meet a tight deadline,Medium
+Tell me about your biggest weakness,Hard
+Describe a time you had to prioritize projects under pressure,Medium
